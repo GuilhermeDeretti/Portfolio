@@ -47,7 +47,7 @@ nav {
   justify-content: space-evenly;
 }
 
-nav a{
+nav a {
   cursor: pointer;
   color: rgb(196, 193, 49);
 }
@@ -74,43 +74,99 @@ nav a{
   color: rgb(61, 91, 221);
 }
 
-/* MAIN/page-wrapper */
+/* MAIN/Footer */
 
-img{
-  width: 200px;
-  height: 200px;
-}
-
-.page-section{
+.page-section {
   width: 90%;
   align-self: center;
-  margin-top: 25px;  
+  margin-top: 25px;
   display: flex;
-  flex-direction: row; 
-  padding-right: 20px; 
+  flex-direction: row;
+  padding-right: 20px;
 }
 
-.page-section h2{
+.page-section h2 {
   width: 15%;
   font-size: 35px;
   display: flex;
   justify-content: right;
   text-align: right;
   border-right: solid;
-  padding-right: 20px
+  padding-right: 20px;
+  min-width: 150px;
 }
 
-.page-section div{
+.page-section div {
   width: 75%;
   padding-left: 3%;
 }
+
+/* WORK */
+.work {
+  display: grid;
+  grid-template-columns:  1fr 1fr ;
+  grid-template-rows: 300px 300px 300px 300px;
+  grid-template-areas: "first first"
+    "first first"
+    "second third"
+    "fourth fifth";
+}
+
+.work section {
+  display: grid;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  /* background-color: rgba(61, 91, 221, 0.4); */
+}
+
+
+.work #first-work {
+  grid-area: first;
+  background-image: url(../images/02-portfolio-1.jpg);
+}
+
+.work #second-work {
+  grid-area: second;
+  background-image: url(../images/02-portfolio-2.jpg);
+}
+
+.work #third-work {
+  grid-area: third;
+  background-image: url(../images/02-portfolio-3.jpg);
+}
+
+.work #forth-work {
+  grid-area: fourth;
+  background-image: url(../images/02-portfolio-4.jpg);
+}
+
+.work #fifth-work {
+  grid-area: fifth;
+  background-image: url(../images/02-run-buddy.jpg);
+}
+
+.work section div {
+  background-color: rgb(196, 193, 49);
+  position: absolute;
+  right: 50px;
+  top: 155px;
+  padding: 5px;
+}
+
+.work section div h3 {
+  color: rgb(61, 91, 221);
+}
+
 /* Footer */
 
-.contact div {  
+.contact div {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;    
+  align-items: center;
   height: 100px;
 }
 
