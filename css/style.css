@@ -21,3 +21,35 @@ h6 {
 p {
   margin: 0;
 }
+
+/* Navigation CSS */
+
+header {
+  background-color: #3f81d8; 
+  display: flex;  
+  align-items: center;
+  padding: 5px 0;
+}
+
+header h1 {
+  background-color: rgb(196, 193, 49);   
+  width: 300px; 
+  display: flex;
+  justify-content: flex-end; 
+  padding-right: 1%;
+  color: #3f81d8;
+  font-size: 20px;
+}
+
+nav {
+  width: 70%;
+}
+nav ul {
+  display: flex;  
+  justify-content: space-evenly;  
+}
+
+nav ul li a{
+  cursor: pointer;
+  color: rgb(196, 193, 49);
+}
