@@ -121,7 +121,12 @@ nav a {
   cursor: pointer;
   position: relative;  
   border: solid 5px rgb(196, 193, 49);
-  background-color: rgba(61, 91, 221, 0.4);
+  background-color: rgba(61, 91, 221, 0.6);
+  background-blend-mode: overlay;
+}
+
+.work section:hover {
+  background-blend-mode: normal;
 }
 
 .work #first-work {
