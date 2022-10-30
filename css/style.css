@@ -110,6 +110,7 @@ nav a {
     "first first"
     "second third"
     "fourth fifth";
+  grid-gap: 10px;
 }
 
 .work section {
@@ -117,12 +118,11 @@ nav a {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 5px;
   cursor: pointer;
-  position: relative;
-  /* background-color: rgba(61, 91, 221, 0.4); */
+  position: relative;  
+  border: solid 5px rgb(196, 193, 49);
+  background-color: rgba(61, 91, 221, 0.4);
 }
-
 
 .work #first-work {
   grid-area: first;
@@ -152,6 +152,7 @@ nav a {
 .work section div {
   background-color: rgb(196, 193, 49);
   padding: 5px;
+  min-width: 70px;
   width: 180px;
   height: 61px;
   position: absolute;
