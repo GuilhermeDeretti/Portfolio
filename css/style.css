@@ -105,7 +105,7 @@ nav a {
 .work {
   display: grid;
   grid-template-columns:  1fr 1fr ;
-  grid-template-rows: 300px 300px 300px 300px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: "first first"
     "first first"
     "second third"
@@ -123,6 +123,9 @@ nav a {
   border: solid 5px rgb(196, 193, 49);
   background-color: rgba(61, 91, 221, 0.6);
   background-blend-mode: overlay;
+
+  min-width: 15rem;
+  min-height: 15rem;
 }
 
 .work section:hover {
@@ -180,4 +183,39 @@ nav a {
 
 .contact div a {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+  /* on tablets, set columns to only be 50% of the width and not grow */
+  nav{
+    display: none;
+  }
+  
+  .work {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-section {
+    flex-direction: column;
+    padding-right: 0px;
+    width: 100%;
+  }
+
+  .page-section h2 {
+    width: 100%;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;    
+    border-right: none;
+    border-bottom: solid;
+    padding-right: none;
+    min-width: 150px;
+   
+  }
+  .page-section div{
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 0;
+  }
 }
