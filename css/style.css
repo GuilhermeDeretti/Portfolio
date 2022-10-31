@@ -77,12 +77,10 @@ nav a {
 /* MAIN/Footer */
 
 .page-section {
-  width: 90%;
   align-self: center;
   margin-top: 25px;
   display: flex;
   flex-direction: row;
-  padding-right: 20px;
 }
 
 .page-section h2 {
@@ -154,7 +152,7 @@ nav a {
   filter: alpha(opacity=1);
   /* Fix to make div clickable in IE */
 }
-
+ 
 #second-work {
   grid-area: second;
   background-image: url(../images/02-portfolio-2.jpg);
@@ -209,7 +207,6 @@ nav a {
   .page-section {
     flex-direction: column;
     padding-right: 0px;
-    width: 100%;
     padding: 3px;
   }
 
