@@ -104,7 +104,7 @@ nav a {
 /* WORK */
 .work {
   display: grid;
-  grid-template-columns:  1fr 1fr ;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: "first first"
     "first first"
@@ -119,7 +119,7 @@ nav a {
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
-  position: relative;  
+  position: relative;
   border: solid 5px rgb(196, 193, 49);
   background-color: rgba(61, 91, 221, 0.6);
   background-blend-mode: overlay;
@@ -132,27 +132,45 @@ nav a {
   background-blend-mode: normal;
 }
 
-.work #first-work {
+#first-work {
   grid-area: first;
-  background-image: url(../images/02-portfolio-1.jpg);
+  background-image: url(../images/Horiseon.png);
 }
 
-.work #second-work {
+#first-work a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  /* No underlines on the link */
+  z-index: 10;
+  /* Places the link above everything else in the div */
+  background-color: #FFF;
+  /* Fix to make div clickable in IE */
+  opacity: 0;
+  /* Fix to make div clickable in IE */
+  filter: alpha(opacity=1);
+  /* Fix to make div clickable in IE */
+}
+
+#second-work {
   grid-area: second;
   background-image: url(../images/02-portfolio-2.jpg);
 }
 
-.work #third-work {
+#third-work {
   grid-area: third;
   background-image: url(../images/02-portfolio-3.jpg);
 }
 
-.work #forth-work {
+#forth-work {
   grid-area: fourth;
   background-image: url(../images/02-portfolio-4.jpg);
 }
 
-.work #fifth-work {
+#fifth-work {
   grid-area: fifth;
   background-image: url(../images/02-run-buddy.jpg);
 }
@@ -185,37 +203,44 @@ nav a {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@media screen and (max-width: 480px) {
-  /* on tablets, set columns to only be 50% of the width and not grow */
-  nav{
-    display: none;
-  }
-  
-  .work {
-    display: flex;
-    flex-direction: column;
-  }
+@media screen and (max-width: 768px) {
+
 
   .page-section {
     flex-direction: column;
     padding-right: 0px;
     width: 100%;
+    padding: 3px;
   }
 
   .page-section h2 {
     width: 100%;
     font-size: 35px;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     border-right: none;
     border-bottom: solid;
     padding-right: none;
     min-width: 150px;
-   
+
   }
-  .page-section div{
+
+  .page-section div {
     width: 100%;
     margin-top: 10px;
     padding-left: 0;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  nav {
+    display: none;
+  }
+
+  .work {
+    display: flex;
+    flex-direction: column;
   }
 }
